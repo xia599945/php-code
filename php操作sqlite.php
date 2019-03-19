@@ -1,3 +1,4 @@
+<?php
 class Sqlite extends SQLite3{
     function __construct($db_name=''){
         $db_name=preg_match('/[^\w\.]+/',$db_name)>0 ? false : $db_name;
@@ -44,3 +45,4 @@ class Sqlite extends SQLite3{
         $this->close();
     }
 }
+?>
